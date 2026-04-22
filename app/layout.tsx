@@ -78,6 +78,13 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: ["/images/bisi-headshot.png"],
   },
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/icon.png", type: "image/png", sizes: "512x512" },
+    ],
+    apple: "/apple-icon.png",
+  },
 };
 
 const modeInitScript = `(function(){try{var m=localStorage.getItem('bisi-mode');document.documentElement.dataset.mode=m||'founder';}catch(e){document.documentElement.dataset.mode='founder';}})();`;
