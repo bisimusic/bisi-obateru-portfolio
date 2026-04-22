@@ -78,12 +78,9 @@ export const metadata: Metadata = {
     description: siteDescription,
     images: ["/images/bisi-headshot.png"],
   },
+  /* Tab icon: app/favicon.ico (Bisi mark, real PNG in .ico; Next optimizes the first <link rel="icon">) */
   icons: {
-    icon: [
-      { url: "/favicon.ico", sizes: "any" },
-      { url: "/icon.png", type: "image/png", sizes: "512x512" },
-    ],
-    apple: "/apple-icon.png",
+    apple: { url: "/apple-icon.png", type: "image/png", sizes: "1024x1024" },
   },
 };
 
