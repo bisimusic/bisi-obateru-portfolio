@@ -293,8 +293,8 @@ export default function BisiEditorialSite() {
         </div>
 
         <h1 className="reveal mode-founder">
-          Building <em>infrastructure</em>{" "}
-          for people who weren&apos;t given permission.
+          Rebuilding immigration as{" "}
+          <em>rights-based infrastructure</em>
         </h1>
         <h1 className="reveal mode-afrobisi">
           Sound that moves <em>between</em> Lagos and the Bay.

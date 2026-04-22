@@ -23,11 +23,11 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "Bisi Obateru — Founder, Builder, AfroBisi",
   description:
-    "JustiGuide, Sunday Swervice, and the infrastructure between immigration law, research, and Afrofusion culture.",
+    "Rebuilding immigration as rights-based infrastructure — JustiGuide, Sunday Swervice, and the work between law, research, and Afrofusion culture.",
   openGraph: {
     title: "Bisi Obateru — Founder, Builder, AfroBisi",
     description:
-      "Building infrastructure for people who weren't given permission — and sound that moves between Lagos and the Bay.",
+      "Rebuilding immigration as rights-based infrastructure — and sound that moves between Lagos and the Bay.",
     type: "website",
   },
 };
