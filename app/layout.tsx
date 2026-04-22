@@ -20,7 +20,13 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
+const siteUrl =
+  process.env.VERCEL === "1" && process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000";
+
 export const metadata: Metadata = {
+  metadataBase: new URL(siteUrl),
   title: "Bisi Obateru — Founder, Builder, AfroBisi",
   description:
     "Rebuilding immigration as rights-based infrastructure — JustiGuide, Sunday Swervice, and the work between law, research, and Afrofusion culture.",

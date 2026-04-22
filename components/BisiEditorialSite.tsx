@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect } from "react";
+import Image from "next/image";
 
 type WorkItem = {
   metaLeft: string;
@@ -283,22 +284,39 @@ export default function BisiEditorialSite() {
       </div>
 
       <header className="hero">
-        <div className="eyebrow reveal">
-          <span className="mode-founder">
-            Founder &amp; CEO, JustiGuide · San Francisco
-          </span>
-          <span className="mode-afrobisi">
-            DJ · Producer · Sunday Swervice · Sausalito
-          </span>
-        </div>
+        <div className="hero-masthead">
+          <div className="eyebrow reveal">
+            <span className="mode-founder">
+              Founder &amp; CEO, JustiGuide · San Francisco
+            </span>
+            <span className="mode-afrobisi">
+              DJ · Producer · Sunday Swervice · Sausalito
+            </span>
+          </div>
 
-        <h1 className="reveal mode-founder">
-          Rebuilding immigration as{" "}
-          <em>rights-based infrastructure</em>
-        </h1>
-        <h1 className="reveal mode-afrobisi">
-          Sound that moves <em>between</em> Lagos and the Bay.
-        </h1>
+          <figure className="hero-portrait reveal">
+            <div className="hero-portrait-frame hero-portrait-frame--stage">
+              <Image
+                src="/images/bisi-justiguide-disrupt.png"
+                alt="Bisi Obateru on stage at TechCrunch Disrupt with the JustiGuide screen"
+                fill
+                priority
+                sizes="(max-width: 900px) 100vw, 420px"
+                className="hero-portrait-img"
+              />
+            </div>
+          </figure>
+
+          <div className="hero-headline">
+            <h1 className="reveal mode-founder">
+              Rebuilding immigration as{" "}
+              <em>rights-based infrastructure</em>
+            </h1>
+            <h1 className="reveal mode-afrobisi">
+              Sound that moves <em>between</em> Lagos and the Bay.
+            </h1>
+          </div>
+        </div>
 
         <div className="hero-meta reveal">
           <p className="mode-founder">
@@ -309,7 +327,7 @@ export default function BisiEditorialSite() {
             Battlefield 200 winner.
           </p>
           <p className="mode-founder">
-            Lagos-born. F-1 alum. Urban planner finishing at SFSU. Stanford
+            Lagos-born. F-1 alum. Urban Planning at SFSU. Stanford
             Immigration Policy Lab affiliate. Author of <em>The Full Stack Founder</em>.
             Building the platform I needed at twenty-one.
           </p>
