@@ -471,20 +471,20 @@ export default function BisiEditorialSite() {
       </section>
 
       <section id="bio" className="portfolio-section">
-        <div className="section-head reveal mode-founder">
+        <div className="section-head reveal in mode-founder">
           <div className="section-num">§ 03 / About</div>
           <h2 className="section-title">
             A <em>working</em> biography.
           </h2>
         </div>
-        <div className="section-head reveal mode-afrobisi">
+        <div className="section-head reveal in mode-afrobisi">
           <div className="section-num">§ 03 / Global brand</div>
           <h2 className="section-title">
             Music that holds <em>the room</em>.
           </h2>
         </div>
 
-        <div className="bio reveal">
+        <div className="bio reveal in">
           <div className="bio-block mode-founder">
             <div className="bio-text">
               <p>
