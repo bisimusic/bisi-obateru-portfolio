@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "vercel": "vercel"
+    "vercel": "node --env-file=.env ./node_modules/vercel/dist/vc.js"
   },
   "dependencies": {
     "next": "16.2.4",
