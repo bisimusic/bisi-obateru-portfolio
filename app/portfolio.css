@@ -238,6 +238,10 @@ html[data-mode="afrobisi"] .switch::after {
   justify-self: end;
 }
 
+.hero-portrait.mode-afrobisi {
+  max-width: 360px;
+}
+
 .hero-portrait-frame {
   position: relative;
   width: 100%;
@@ -251,9 +255,18 @@ html[data-mode="afrobisi"] .switch::after {
   aspect-ratio: 3 / 2;
 }
 
-.hero-portrait-img {
+.hero-portrait-frame--portrait {
+  aspect-ratio: 2 / 3;
+}
+
+.hero-portrait-frame--stage .hero-portrait-img {
   object-fit: cover;
   object-position: 42% 28%;
+}
+
+.hero-portrait-frame--portrait .hero-portrait-img {
+  object-fit: cover;
+  object-position: center 18%;
 }
 
 .eyebrow {
@@ -298,11 +311,18 @@ html[data-mode="afrobisi"] .switch::after {
 .hero-meta {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 80px;
+  gap: 32px 80px;
   max-width: 920px;
   margin-top: 80px;
   padding-top: 32px;
   border-top: 1px solid color-mix(in srgb, var(--ink) 18%, transparent);
+}
+
+.hero-music-bio {
+  grid-column: 1 / -1;
+  max-width: 68ch;
+  font-size: 19px;
+  line-height: 1.6;
 }
 
 .hero-meta p {
@@ -593,6 +613,10 @@ html[data-mode="founder"] .mode-afrobisi {
 }
 
 .bio {
+  display: block;
+}
+
+.bio-block {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 100px;
@@ -803,7 +827,7 @@ html[data-mode="founder"] .mode-afrobisi {
   .hero-meta,
   .section-head,
   .work-grid,
-  .bio,
+  .bio-block,
   .cta-inner {
     grid-template-columns: 1fr;
     gap: 32px;

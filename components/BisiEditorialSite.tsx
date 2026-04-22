@@ -100,7 +100,7 @@ const afrobisiWork: WorkItem[] = [
         Consul General <em>panel + set</em>.
       </>
     ),
-    body: "Panel and set at the French Consul General's Residence, organized through Ramp-Up Lab and the HEC Paris MBA program. Founder-mode upstairs, AfroBisi-mode after the keynote.",
+    body: "Panel and set at the French Consul General's Residence, organized through Ramp-Up Lab and the HEC Paris MBA program. Founder-mode upstairs, Bisi Music after the keynote.",
     tags: ["Diplomatic", "Panel"],
   },
 ];
@@ -255,7 +255,7 @@ export default function BisiEditorialSite() {
   const founderMarquee =
     "JustiGuide ✦ TIME Best Inventions 2025 ✦ TechCrunch Disrupt Pitch Showcase winner (Policy + Protection) ✦ Battlefield 200 winner ✦ NVIDIA Inception ✦ Stanford Immigration Policy Lab ✦ $123.4M Pipeline ✦ 47K+ Users ✦ ";
   const afrobisiMarquee =
-    "Sunday Swervice ✦ Eria Events Sausalito ✦ Afrofusion ✦ Soundch3k LLC ✦ Brand Activations ✦ Consulate Sets ✦ ";
+    "Bisi Music ✦ Sunday Swervice ✦ Eria Events Sausalito ✦ Afrofusion ✦ Soundch3k LLC ✦ Brand Activations ✦ Consulate Sets ✦ ";
 
   return (
     <>
@@ -263,7 +263,7 @@ export default function BisiEditorialSite() {
         <div className="mark">
           Bisi Obateru<span className="dot" />
           <span className="mode-founder">Founder</span>
-          <span className="mode-afrobisi">AfroBisi</span>
+          <span className="mode-afrobisi">Bisi Music</span>
         </div>
         <nav className="nav" aria-label="Primary">
           <a href="#work">Work</a>
@@ -275,10 +275,10 @@ export default function BisiEditorialSite() {
           type="button"
           className="toggle"
           onClick={toggleMode}
-          aria-label="Switch between Founder and AfroBisi mode"
+          aria-label="Switch between Founder and Bisi Music mode"
         >
           <span className="mode-founder">Founder</span>
-          <span className="mode-afrobisi">AfroBisi</span>
+          <span className="mode-afrobisi">Bisi Music</span>
           <span className="switch" aria-hidden />
         </button>
       </div>
@@ -294,7 +294,7 @@ export default function BisiEditorialSite() {
             </span>
           </div>
 
-          <figure className="hero-portrait reveal">
+          <figure className="hero-portrait reveal mode-founder">
             <div className="hero-portrait-frame hero-portrait-frame--stage">
               <Image
                 src="/images/bisi-justiguide-disrupt.png"
@@ -302,6 +302,17 @@ export default function BisiEditorialSite() {
                 fill
                 priority
                 sizes="(max-width: 900px) 100vw, 420px"
+                className="hero-portrait-img"
+              />
+            </div>
+          </figure>
+          <figure className="hero-portrait reveal mode-afrobisi">
+            <div className="hero-portrait-frame hero-portrait-frame--portrait">
+              <Image
+                src="/images/bisi-headshot.png"
+                alt="Bisi Obateru"
+                fill
+                sizes="(max-width: 900px) 100vw, 360px"
                 className="hero-portrait-img"
               />
             </div>
@@ -330,6 +341,12 @@ export default function BisiEditorialSite() {
             Lagos-born. F-1 alum. Urban Planning at SFSU. Stanford
             Immigration Policy Lab affiliate. Author of <em>The Full Stack Founder</em>.
             Building the platform I needed at twenty-one.
+          </p>
+          <p className="mode-afrobisi hero-music-bio">
+            Bisi is a globally influenced Nigerian fusion artist, performer, and
+            community builder whose warm presence, Afrohouse and Afropop sound,
+            and commitment to art as a force for connection and social impact
+            bring a distinctive energy to every gathering.
           </p>
           <p className="mode-afrobisi">
             <strong>Sunday Swervice</strong> is a weekly Afrofusion ritual at
@@ -412,9 +429,9 @@ export default function BisiEditorialSite() {
           </div>
           <div className="stat">
             <div className="stat-num">
-              52<em>×</em>
+              32<em>×</em>
             </div>
-            <div className="stat-label">Sundays a Year</div>
+            <div className="stat-label">Sundays · Mar–Oct &apos;25</div>
           </div>
           <div className="stat">
             <div className="stat-num">∞</div>
@@ -422,9 +439,9 @@ export default function BisiEditorialSite() {
           </div>
           <div className="stat">
             <div className="stat-num">
-              1<em>LLC</em>
+              50<em>+</em>
             </div>
-            <div className="stat-label">Soundch3k</div>
+            <div className="stat-label">Artists supported</div>
           </div>
         </div>
       </section>
@@ -454,61 +471,112 @@ export default function BisiEditorialSite() {
       </section>
 
       <section id="bio" className="portfolio-section">
-        <div className="section-head reveal">
+        <div className="section-head reveal mode-founder">
           <div className="section-num">§ 03 / About</div>
           <h2 className="section-title">
             A <em>working</em> biography.
           </h2>
         </div>
+        <div className="section-head reveal mode-afrobisi">
+          <div className="section-num">§ 03 / Global brand</div>
+          <h2 className="section-title">
+            Music that holds <em>the room</em>.
+          </h2>
+        </div>
 
         <div className="bio reveal">
-          <div className="bio-text">
-            <p>
-              Bisi Obateru was born in Lagos and arrived in the U.S. on an F-1
-              visa. The platform that became JustiGuide started as the platform
-              Bisi needed at twenty-one — a way to navigate a system designed to
-              feel arbitrary, and to reframe immigration as{" "}
-              <em>rights-based infrastructure</em> rather than permission-based
-              bureaucracy.
-            </p>
-            <p>
-              Today, JustiGuide is a technology company unifying product and legal
-              workflows on one surface, with two AI agents — Dolores and Relo —
-              serving attorneys and immigrants on opposite sides of the same
-              petition. The company holds TIME Best Inventions 2025; at TechCrunch
-              Disrupt it was a Pitch Showcase winner (Policy + Protection) and a
-              Battlefield 200 winner, and runs a research affiliation with the Stanford
-              Immigration Policy Lab.
-            </p>
-            <p>
-              Outside the company, Bisi is an Urban Planning student at SFSU (one
-              course remaining), the founder and resident DJ of{" "}
-              <em>Sunday Swervice</em> in Sausalito, and the author of a forthcoming
-              book, <em>The Full Stack Founder</em>. The throughline: building
-              infrastructure — legal, civic, cultural — for people who weren&apos;t
-              given permission.
-            </p>
+          <div className="bio-block mode-founder">
+            <div className="bio-text">
+              <p>
+                Bisi Obateru was born in Lagos and arrived in the U.S. on an F-1
+                visa. The platform that became JustiGuide started as the platform
+                Bisi needed at twenty-one — a way to navigate a system designed to
+                feel arbitrary, and to reframe immigration as{" "}
+                <em>rights-based infrastructure</em> rather than permission-based
+                bureaucracy.
+              </p>
+              <p>
+                Today, JustiGuide is a technology company unifying product and legal
+                workflows on one surface, with two AI agents — Dolores and Relo —
+                serving attorneys and immigrants on opposite sides of the same
+                petition. The company holds TIME Best Inventions 2025; at TechCrunch
+                Disrupt it was a Pitch Showcase winner (Policy + Protection) and a
+                Battlefield 200 winner, and runs a research affiliation with the
+                Stanford Immigration Policy Lab.
+              </p>
+              <p>
+                Outside the company, Bisi is an Urban Planning student at SFSU (one
+                course remaining), the founder and resident DJ of{" "}
+                <em>Sunday Swervice</em> in Sausalito, and the author of a
+                forthcoming book, <em>The Full Stack Founder</em>. The throughline:
+                building infrastructure — legal, civic, cultural — for people
+                who weren&apos;t given permission.
+              </p>
+            </div>
+            <div className="bio-meta">
+              <dl>
+                <dt>Based</dt>
+                <dd>San Francisco · Lagos</dd>
+                <dt>Company</dt>
+                <dd>JustiGuide Inc.</dd>
+                <dt>Music</dt>
+                <dd>Soundch3k LLC</dd>
+                <dt>Research</dt>
+                <dd>Stanford Immigration Policy Lab</dd>
+                <dt>Writing</dt>
+                <dd>
+                  The Full Stack Founder <em>(2026)</em>
+                </dd>
+                <dt>Education</dt>
+                <dd>SFSU, Urban Planning</dd>
+                <dt>Status</dt>
+                <dd>Building. Booking. Writing.</dd>
+              </dl>
+            </div>
           </div>
 
-          <div className="bio-meta">
-            <dl>
-              <dt>Based</dt>
-              <dd>San Francisco · Lagos</dd>
-              <dt>Company</dt>
-              <dd>JustiGuide Inc.</dd>
-              <dt>Music</dt>
-              <dd>Soundch3k LLC</dd>
-              <dt>Research</dt>
-              <dd>Stanford Immigration Policy Lab</dd>
-              <dt>Writing</dt>
-              <dd>
-                The Full Stack Founder <em>(2026)</em>
-              </dd>
-              <dt>Education</dt>
-              <dd>SFSU, Urban Planning</dd>
-              <dt>Status</dt>
-              <dd>Building. Booking. Writing.</dd>
-            </dl>
+          <div className="bio-block mode-afrobisi">
+            <div className="bio-text">
+              <p>
+                Bisi is a globally influenced Nigerian fusion artist, performer,
+                and community builder whose warm presence, Afrohouse and Afropop
+                sound, and commitment to art as a force for connection and social
+                impact bring a distinctive energy to every gathering.
+              </p>
+              <p>
+                The public name for that work is <strong>Bisi Music</strong>, run
+                through <strong>Soundch3k LLC</strong> — production, music
+                direction, and full activations from tech launches to consulate
+                programs to civic rooms. Same throughline: culture first, not
+                wallpaper.
+              </p>
+              <p>
+                The flagship room is <em>Sunday Swervice</em> — a weekly
+                Afrofusion residency at <strong>Eria Events</strong> in Sausalito
+                (300–400 on the floor, every Sunday), where the long set is the
+                brand in its purest form.
+              </p>
+            </div>
+            <div className="bio-meta">
+              <dl>
+                <dt>Global handle</dt>
+                <dd>Bisi Music</dd>
+                <dt>Company</dt>
+                <dd>Soundch3k LLC</dd>
+                <dt>Residency</dt>
+                <dd>
+                  Sunday Swervice · Eria Events, Sausalito
+                </dd>
+                <dt>Sound</dt>
+                <dd>Afrohouse · Afropop · Nigerian fusion</dd>
+                <dt>Format</dt>
+                <dd>Performance · DJ · production · direction</dd>
+                <dt>Footprint</dt>
+                <dd>San Francisco Bay · Lagos · intl. bookings</dd>
+                <dt>Status</dt>
+                <dd>Weekly Sundays · production · activations</dd>
+              </dl>
+            </div>
           </div>
         </div>
       </section>

@@ -1,6 +1,13 @@
 import type { Metadata } from "next";
 import { Fraunces, Inter, JetBrains_Mono } from "next/font/google";
 import Script from "next/script";
+import {
+  articleSeoKeywords,
+  getSiteUrl,
+  siteDescription,
+  siteKeywords,
+  siteTitle,
+} from "@/lib/site";
 import "./globals.css";
 import "./portfolio.css";
 
@@ -20,21 +27,56 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const siteUrl =
-  process.env.VERCEL === "1" && process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000";
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
-  title: "Bisi Obateru — Founder, Builder, AfroBisi",
-  description:
-    "Rebuilding immigration as rights-based infrastructure — JustiGuide, Sunday Swervice, and the work between law, research, and Afrofusion culture.",
+  title: {
+    default: siteTitle,
+    template: "%s · Bisi Obateru",
+  },
+  description: siteDescription,
+  applicationName: "Bisi Obateru · Bisi Music",
+  authors: [{ name: "Bisi Obateru", url: siteUrl }],
+  creator: "Bisi Obateru",
+  publisher: "Bisi Obateru",
+  category: "business",
+  keywords: [...siteKeywords, ...articleSeoKeywords],
+  alternates: {
+    canonical: "/",
+    types: {
+      "application/rss+xml": "https://immigrationnavigator.substack.com/feed",
+    },
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
   openGraph: {
-    title: "Bisi Obateru — Founder, Builder, AfroBisi",
-    description:
-      "Rebuilding immigration as rights-based infrastructure — and sound that moves between Lagos and the Bay.",
     type: "website",
+    locale: "en_US",
+    url: siteUrl,
+    siteName: "Bisi Obateru · Bisi Music",
+    title: siteTitle,
+    description: siteDescription,
+    images: [
+      {
+        url: "/images/bisi-headshot.png",
+        alt: "Bisi Obateru — Bisi Music, JustiGuide, Sunday Swervice / Soundch3k",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: siteTitle,
+    description: siteDescription,
+    images: ["/images/bisi-headshot.png"],
   },
 };
 
