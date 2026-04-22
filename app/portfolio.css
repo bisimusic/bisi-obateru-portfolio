@@ -672,8 +672,10 @@ html[data-mode="founder"] .mode-afrobisi {
   max-width: 1400px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  gap: 16px 32px;
   font-family: var(--mono);
   font-size: 11px;
   letter-spacing: 0.12em;

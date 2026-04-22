@@ -555,6 +555,13 @@ export default function BisiEditorialSite() {
       <footer className="portfolio-footer">
         <span>© 2026 Bisi Obateru</span>
         <span>San Francisco · Lagos</span>
+        <a
+          href="https://immigrationnavigator.substack.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          The Navigator · Substack
+        </a>
         <span>Site v1.0 · Built in conversation</span>
       </footer>
     </>
