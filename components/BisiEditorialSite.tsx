@@ -338,9 +338,9 @@ export default function BisiEditorialSite() {
             Battlefield 200 winner.
           </p>
           <p className="mode-founder">
-            Lagos-born. F-1 alum. Urban Planning at SFSU. Stanford
-            Immigration Policy Lab affiliate. Author of <em>The Full Stack Founder</em>.
-            Building the platform I needed at twenty-one.
+            Lagos-born. F-1 alum. Stanford Immigration Policy Lab affiliate. Author
+            of <em>The Full Stack Founder</em>. Building the platform I needed at
+            twenty-one.
           </p>
           <p className="mode-afrobisi hero-music-bio">
             Bisi is a globally influenced Nigerian fusion artist, performer, and
@@ -505,8 +505,7 @@ export default function BisiEditorialSite() {
                 Stanford Immigration Policy Lab.
               </p>
               <p>
-                Outside the company, Bisi is an Urban Planning student at SFSU (one
-                course remaining), the founder and resident DJ of{" "}
+                Outside the company, Bisi is the founder and resident DJ of{" "}
                 <em>Sunday Swervice</em> in Sausalito, and the author of a
                 forthcoming book, <em>The Full Stack Founder</em>. The throughline:
                 building infrastructure — legal, civic, cultural — for people
@@ -528,7 +527,7 @@ export default function BisiEditorialSite() {
                   The Full Stack Founder <em>(2026)</em>
                 </dd>
                 <dt>Education</dt>
-                <dd>SFSU, Urban Planning</dd>
+                <dd>SFSU — urban planning (prior study)</dd>
                 <dt>Status</dt>
                 <dd>Building. Booking. Writing.</dd>
               </dl>
