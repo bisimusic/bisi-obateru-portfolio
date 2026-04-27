@@ -189,6 +189,28 @@ const essays: Array<{
   },
 ];
 
+const soundcloudTracks: Array<{
+  href: string;
+  title: string;
+  date: string;
+}> = [
+  {
+    href: "https://soundcloud.com/bisimusik/sunrise-jtree",
+    title: "Sunrise JTree",
+    date: "04.10.26",
+  },
+  {
+    href: "https://soundcloud.com/bisimusik/just-a-snippet-rsac-03-23-26",
+    title: "Just a snippet RSAC",
+    date: "03.23.26",
+  },
+  {
+    href: "https://soundcloud.com/bisimusik/move-mix-111825",
+    title: "MOVE MIX",
+    date: "11.18.24",
+  },
+];
+
 function WorkGrid({ items }: { items: WorkItem[] }) {
   return (
     <div className="work-grid">
@@ -253,7 +275,7 @@ export default function BisiEditorialSite() {
   }, []);
 
   const founderMarquee =
-    "JustiGuide ✦ TIME Best Inventions 2025 ✦ TechCrunch Disrupt Pitch Showcase winner (Policy + Protection) ✦ Battlefield 200 winner ✦ NVIDIA Inception ✦ Stanford Immigration Policy Lab ✦ $123.4M Pipeline ✦ 47K+ Users ✦ ";
+    "JustiGuide ✦ TIME Best Inventions 2025 ✦ TechCrunch Disrupt ✦ Battlefield 200 + Pitch Showcase (Policy + Protection) ✦ NVIDIA Inception ✦ Stanford Immigration Policy Lab ✦ $123.4M Pipeline ✦ 47K+ Users ✦ ";
   const afrobisiMarquee =
     "Bisi Music ✦ Sunday Swervice ✦ Eria Events Sausalito ✦ Afrofusion ✦ Soundch3k LLC ✦ Brand Activations ✦ Consulate Sets ✦ ";
 
@@ -333,9 +355,9 @@ export default function BisiEditorialSite() {
           <p className="mode-founder">
             <strong>JustiGuide</strong> is an AI-powered immigration legal
             platform reframing the U.S. system as rights-based infrastructure
-            rather than permission-based bureaucracy. TIME Best Inventions 2025.
-            TechCrunch Disrupt Pitch Showcase winner (Policy + Protection) and
-            Battlefield 200 winner.
+            rather than permission-based bureaucracy. TIME Best Inventions 2025. At
+            TechCrunch Disrupt, a Battlefield 200 and Pitch Showcase winner (Policy +
+            Protection).
           </p>
           <p className="mode-founder">
             Lagos-born. F-1 alum. Stanford Immigration Policy Lab affiliate. Author
@@ -390,6 +412,34 @@ export default function BisiEditorialSite() {
         </div>
         <div className="mode-afrobisi">
           <WorkGrid items={afrobisiWork} />
+        </div>
+
+        <div
+          className="stream-list mode-afrobisi reveal"
+          role="region"
+          aria-label="Bisi Music on SoundCloud"
+        >
+          <h3 className="stream-list-title">Listen on SoundCloud</h3>
+          <ul className="stream-list-tracks">
+            {soundcloudTracks.map((t) => (
+              <li key={t.href}>
+                <a
+                  href={t.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="stream-list-link"
+                >
+                  <span className="stream-list-name">{t.title}</span>
+                  <span className="stream-list-date" aria-hidden="true">
+                    {t.date}
+                  </span>
+                  <span className="stream-list-arrow" aria-hidden>
+                    →
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </section>
 
@@ -500,9 +550,9 @@ export default function BisiEditorialSite() {
                 workflows on one surface, with two AI agents — Dolores and Relo —
                 serving attorneys and immigrants on opposite sides of the same
                 petition. The company holds TIME Best Inventions 2025; at TechCrunch
-                Disrupt it was a Pitch Showcase winner (Policy + Protection) and a
-                Battlefield 200 winner, and runs a research affiliation with the
-                Stanford Immigration Policy Lab.
+                Disrupt it was a Battlefield 200 and Pitch Showcase winner (Policy +
+                Protection), and runs a research affiliation with the Stanford
+                Immigration Policy Lab.
               </p>
               <p>
                 Outside the company, Bisi is the founder and resident DJ of{" "}
@@ -629,7 +679,12 @@ export default function BisiEditorialSite() {
               <a href="#" className="cta-link mode-afrobisi">
                 Instagram · @afrobisi<span className="arrow-w">→</span>
               </a>
-              <a href="#" className="cta-link mode-afrobisi">
+              <a
+                href="https://soundcloud.com/bisimusik"
+                className="cta-link mode-afrobisi"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 SoundCloud<span className="arrow-w">→</span>
               </a>
             </div>

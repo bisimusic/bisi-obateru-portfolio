@@ -108,7 +108,7 @@ export function JsonLd() {
         founder: { "@id": `${base}/#person` },
         description:
           "AI-powered immigration legal platform: rights-based infrastructure, not permission-based bureaucracy.",
-        award: "TIME Best Inventions 2025; TechCrunch Disrupt — Pitch Showcase (Policy + Protection); Battlefield 200",
+        award: "TIME Best Inventions 2025; TechCrunch Disrupt — Battlefield 200; Pitch Showcase (Policy + Protection)",
       },
     ],
   };
