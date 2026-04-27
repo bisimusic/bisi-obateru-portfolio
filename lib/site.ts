@@ -17,7 +17,7 @@ export const siteTitle =
   "Bisi Obateru — Founder, Builder, Bisi Music" as const;
 
 export const siteDescription =
-  "Founder & CEO of JustiGuide (AI immigration legal platform, TIME Best Inventions 2025; TechCrunch Disrupt). Sunday Swervice / Soundch3k. Stanford Immigration Policy Lab. San Francisco and Lagos. Articles with Bisi Obateru appear in The Navigator (Substack), on LinkedIn, and in company and press coverage; related links are in site metadata and structured data.";
+  "Founder & CEO of JustiGuide (AI immigration legal platform, TIME Best Inventions 2025; TechCrunch Disrupt). Sunday Swervice / Soundch3k. Stanford Immigration Policy Lab. Based in San Francisco. Articles with Bisi Obateru appear in The Navigator (Substack), on LinkedIn, and in company and press coverage; related links are in site metadata and structured data.";
 
 export const siteKeywords = [
   "Bisi Obateru",

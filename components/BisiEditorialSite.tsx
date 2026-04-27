@@ -275,7 +275,7 @@ export default function BisiEditorialSite() {
   }, []);
 
   const founderMarquee =
-    "JustiGuide ✦ TIME Best Inventions 2025 ✦ TechCrunch Disrupt ✦ Battlefield 200 + Pitch Showcase (Policy + Protection) ✦ NVIDIA Inception ✦ Stanford Immigration Policy Lab ✦ $123.4M Pipeline ✦ 47K+ Users ✦ ";
+    "JustiGuide ✦ TIME Best Inventions 2025 ✦ TechCrunch Disrupt ✦ Startup Battlefield 200 Pitch Showcase (Policy + Protection) ✦ NVIDIA Inception ✦ Stanford Immigration Policy Lab ✦ $123.4M Pipeline ✦ 47K+ Users ✦ ";
   const afrobisiMarquee =
     "Bisi Music ✦ Sunday Swervice ✦ Eria Events Sausalito ✦ Afrofusion ✦ Soundch3k LLC ✦ Brand Activations ✦ Consulate Sets ✦ ";
 
@@ -356,8 +356,8 @@ export default function BisiEditorialSite() {
             <strong>JustiGuide</strong> is an AI-powered immigration legal
             platform reframing the U.S. system as rights-based infrastructure
             rather than permission-based bureaucracy. TIME Best Inventions 2025. At
-            TechCrunch Disrupt, a Battlefield 200 and Pitch Showcase winner (Policy +
-            Protection).
+            TechCrunch Disrupt, a Startup Battlefield 200 Pitch Showcase winner
+            (Policy + Protection).
           </p>
           <p className="mode-founder">
             Lagos-born. F-1 alum. Stanford Immigration Policy Lab affiliate. Author
@@ -550,22 +550,24 @@ export default function BisiEditorialSite() {
                 workflows on one surface, with two AI agents — Dolores and Relo —
                 serving attorneys and immigrants on opposite sides of the same
                 petition. The company holds TIME Best Inventions 2025; at TechCrunch
-                Disrupt it was a Battlefield 200 and Pitch Showcase winner (Policy +
-                Protection), and runs a research affiliation with the Stanford
+                Disrupt it was a Startup Battlefield 200 Pitch Showcase winner (Policy
+                + Protection), and runs a research affiliation with the Stanford
                 Immigration Policy Lab.
               </p>
               <p>
-                Outside the company, Bisi is the founder and resident DJ of{" "}
-                <em>Sunday Swervice</em> in Sausalito, and the author of a
-                forthcoming book, <em>The Full Stack Founder</em>. The throughline:
-                building infrastructure — legal, civic, cultural — for people
-                who weren&apos;t given permission.
+                Outside the company, Bisi is a DJ, producer, and speaker, and the
+                author of a forthcoming book,                 <em>The Full Stack Founder</em>. The{" "}
+                <em>Sunday Swervice</em>{" "}
+                newsletter covers events and what&apos;s
+                happening in San Francisco — subscribe to stay in the loop. The
+                throughline: building infrastructure — legal, civic, cultural — for
+                people who weren&apos;t given permission.
               </p>
             </div>
             <div className="bio-meta">
               <dl>
                 <dt>Based</dt>
-                <dd>San Francisco · Lagos</dd>
+                <dd>San Francisco</dd>
                 <dt>Company</dt>
                 <dd>JustiGuide Inc.</dd>
                 <dt>Music</dt>
@@ -694,7 +696,7 @@ export default function BisiEditorialSite() {
 
       <footer className="portfolio-footer">
         <span>© 2026 Bisi Obateru</span>
-        <span>San Francisco · Lagos</span>
+        <span>San Francisco</span>
         <a
           href="https://immigrationnavigator.substack.com/"
           target="_blank"
